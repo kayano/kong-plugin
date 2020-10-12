@@ -4,7 +4,7 @@ local helpers = require "spec.helpers"
 local PLUGIN_NAME = "myplugin"
 
 
-for _, strategy in helpers.all_strategies() do
+for _, strategy in ipairs {"off"} do
   describe(PLUGIN_NAME .. ": (access) [#" .. strategy .. "]", function()
     local client
 
